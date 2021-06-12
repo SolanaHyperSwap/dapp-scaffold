@@ -18,6 +18,7 @@ export const AppLayout = React.memo((props: any) => {
               <h2>Solana DAPP</h2>
             </div>
           </Link>
+          <Link to="/add-nft">Add Nft</Link>
           <AppBar />
         </Header>
         <Content style={{ padding: "0 50px" }}>{props.children}</Content>

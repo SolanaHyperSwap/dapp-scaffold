@@ -10,7 +10,7 @@ import { ConnectButton } from "../ConnectButton";
 export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
   const { connected } = useWallet();
 
-  const TopBar = (
+  return (
     <div className="App-Bar-right">
       {connected ? (
         <CurrentUserBadge />
@@ -38,6 +38,4 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
       {props.right}
     </div>
   );
-
-  return TopBar;
 };

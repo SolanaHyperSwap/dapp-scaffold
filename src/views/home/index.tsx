@@ -31,6 +31,10 @@ export const HomeView = () => {
     };
   }, [marketEmitter, midPriceInUSD, tokenMap]);
 
+  useEffect(() => {
+    console.log("SOL changed:", SOL)
+  }, [SOL])
+
   return (
     <Row gutter={[16, 16]} align="middle">
       <Col span={24}>
